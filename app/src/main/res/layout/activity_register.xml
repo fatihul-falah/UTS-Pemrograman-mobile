@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_marginLeft="30dp"
+    android:layout_marginRight="30dp"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:id="@+id/logohalamanregister"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="10dp"
+        android:src="@drawable/ic_baseline_menu_book_24"
+        />
+    <TextView
+        android:id="@+id/tvRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="REGISTER"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/logohalamanregister"
+        android:layout_marginTop="10dp"
+        />
+    <EditText
+        android:id="@+id/etRegisterEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvLogin"
+        android:layout_marginTop="25dp"
+        android:drawableStart="@drawable/ic_baseline_email_24"
+        android:hint="Email"
+        android:drawablePadding="24dp"
+        android:inputType="textEmailAddress"
+        />
+    <EditText
+        android:id="@+id/etRegisterName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etRegisterEmail"
+        android:layout_marginTop="12dp"
+        android:drawableStart="@drawable/ic_baseline_person_24"
+        android:hint="Nama Lengkap"
+        android:drawablePadding="24dp"
+        />
+
+    <EditText
+        android:id="@+id/etRegisterPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etRegisterName"
+        android:layout_marginTop="12dp"
+        android:drawableStart="@drawable/ic_baseline_lock_24"
+        android:hint="Password"
+        android:drawablePadding="24dp"
+        android:inputType="textPassword"
+        />
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etRegisterPassword"
+        android:text="Register"
+        />
+    <TextView
+        android:id="@+id/tvLoginHere"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnRegister"
+        android:text="Already Have Account? Login Here"
+        android:textAlignment="center"
+        />
+
+
+</LinearLayout>
